@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Demoapp</string>
+    <string name="welcome_to_splash_screen">welcome to splash screen</string>
+    <string name="welcome_login">welcome to login activity</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+</resources>
