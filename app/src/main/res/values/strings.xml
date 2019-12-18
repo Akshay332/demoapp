@@ -5,4 +5,12 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="welcome_to_signup_activity">welcome to signup activity</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">last Name</string>
+    <string name="email">Email</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_paswrd">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
 </resources>

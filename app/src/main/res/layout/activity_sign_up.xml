@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_1"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/iv_backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_backbutton"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+    <TextView
+        android:id="@+id/txtv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_to_signup_activity"
+        android:textSize="20sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/iv_backbtn"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"/>
+    <TextView
+        android:id="@+id/txtv_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/txtv_welcome"
+        android:layout_marginTop="28dp"/>
+
+    <EditText
+        android:id="@+id/editText_firstname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@id/txtv_firstname"
+        app:layout_constraintTop_toBottomOf="@id/txtv_firstname" />
+
+    <TextView
+        android:id="@+id/txtv_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/last_name"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editText_firstname"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/editText_firstname"/>
+    <EditText
+        android:id="@+id/editText_lastname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@id/txtv_lastname"
+        app:layout_constraintTop_toBottomOf="@id/txtv_lastname" />
+    <TextView
+        android:id="@+id/txtv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editText_lastname"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/editText_lastname"/>
+    <EditText
+        android:id="@+id/editText_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@id/txtv_email"
+        app:layout_constraintTop_toBottomOf="@id/txtv_email" />
+    <TextView
+        android:id="@+id/txtv_paswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_password"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editText_Email"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/editText_Email"/>
+    <EditText
+        android:id="@+id/editText_Paswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@id/txtv_paswrd"
+        app:layout_constraintTop_toBottomOf="@id/txtv_paswrd" />
+    <TextView
+        android:id="@+id/txtv_confirmpaswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm_paswrd"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/editText_Paswrd"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/editText_Paswrd"/>
+    <EditText
+        android:id="@+id/editText_confirmPaswrd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:backgroundTint="@color/colorWhite"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@id/txtv_confirmpaswrd"
+        app:layout_constraintTop_toBottomOf="@id/txtv_confirmpaswrd" />
+
+<Button
+    android:id="@+id/signupBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawable_sectanglebtn_radius2"
+    android:text="@string/sign_up"
+    android:textColor="@color/colorWhite"
+    android:textStyle="bold"
+    app:layout_constraintTop_toBottomOf="@id/editText_confirmPaswrd"
+    app:layout_constraintStart_toStartOf="@id/editText_confirmPaswrd"
+    app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+    android:layout_marginTop="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
