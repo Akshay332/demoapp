@@ -13,4 +13,7 @@
     <string name="enter_password">Enter Password</string>
     <string name="confirm_paswrd">Confirm Password</string>
     <string name="sign_up">Sign up</string>
+    <string name="welcome_to_home_activity">welcome to home activity</string>
+    <string name="logout">logout</string>
+    <string name="home_activity">Home activity</string>
 </resources>
