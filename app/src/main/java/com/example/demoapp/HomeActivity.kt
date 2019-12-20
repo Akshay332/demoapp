@@ -1,5 +1,6 @@
 package com.example.demoapp
 
+import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,6 +13,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.drawer.*
 
 class HomeActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelectedListener {
 
@@ -21,7 +23,7 @@ class HomeActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.drawer)
         toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
 
@@ -40,6 +42,7 @@ class HomeActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
         animationDrawable.setEnterFadeDuration(2000)
         animationDrawable.setExitFadeDuration(4000)
         animationDrawable.start()
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -50,8 +53,10 @@ class HomeActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId){
             R.id.menu_logout ->{
-                Toast.makeText(applicationContext, "logout", Toast.LENGTH_LONG).show()
+                startActivity(Intent(this,LoginScreenActivity::class.java))
+                Toast.makeText(this, "logout", Toast.LENGTH_LONG).show()
                 true
+
             }
             else -> super.onOptionsItemSelected(item)
         }
@@ -70,6 +75,7 @@ class HomeActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             }
             R.id.nav_signout ->{
                 Toast.makeText(this,"sign out clicked",Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this,LoginScreenActivity::class.java))
             }
         }
         drawerLayout.closeDrawer(GravityCompat.START)

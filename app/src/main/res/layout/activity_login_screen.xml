@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_1"
-    tools:context=".LoginScreen">
+    tools:context=".LoginScreenActivity">
 
     <TextView
         android:id="@+id/txtv_welcome"
@@ -66,7 +66,7 @@
         android:id="@+id/login_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/drawable_sectanglebtn_radius2"
         android:text="@string/login"
         android:textColor="@color/colorWhite"
@@ -79,7 +79,7 @@
         android:id="@+id/txtv_forgtpswd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="@string/forgot_password"
         android:textColor="@color/colorWhite"
         android:textSize="12sp"
