@@ -1,9 +1,10 @@
-package com.example.demoapp
+package com.example.demoapp.activities
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.demoapp.R
 import kotlinx.android.synthetic.main.activity_sign_up.*
 
 class SignUpActivity : AppCompatActivity(),View.OnClickListener {
@@ -18,11 +19,13 @@ class SignUpActivity : AppCompatActivity(),View.OnClickListener {
 
     override fun onClick(v: View?) {
         when(v!!.id){
-            R.id.iv_backbtn->{
-                startActivity(Intent(this,LoginScreenActivity::class.java))
+            R.id.iv_backbtn ->{
+                startActivity(Intent(this,
+                    LoginScreenActivity::class.java))
             }
-            R.id.signupBtn->{
-                startActivity(Intent(this,HomeActivity::class.java))
+            R.id.signupBtn ->{
+                startActivity(Intent(this,
+                    HomeActivity::class.java))
 
             }
         }
