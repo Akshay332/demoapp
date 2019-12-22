@@ -99,7 +99,7 @@ class LoginScreenActivity : AppCompatActivity(), View.OnClickListener {
                 edittext_pswd!!.text.toString().trim { it <= ' ' })
         ) {
 
-            val accountsIntent = Intent(activity, HomeActivity::class.java)
+            val accountsIntent = Intent(activity, USersListActivity::class.java)
             accountsIntent.putExtra("EMAIL", edittxt_username!!.text.toString().trim { it <= ' ' })
             emptyInputEditText()
             startActivity(accountsIntent)
