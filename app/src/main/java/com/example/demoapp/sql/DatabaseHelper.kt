@@ -11,7 +11,7 @@ class DatabaseHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAM
 
     // create table sql query
         private val CREATE_USER_TABLE = ("CREATE TABLE " + TABLE_USER + "("
-            + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_FIRSTNAME + " TEXT," + COLUMN_USER_LASTNAME + "TEXT"
+            + COLUMN_USER_ID + " INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_USER_FIRSTNAME + " TEXT," + COLUMN_USER_LASTNAME + "TEXT,"
             + COLUMN_USER_EMAIL + " TEXT," + COLUMN_USER_PASSWORD + " TEXT" + ")")
 
     // drop table sql query
@@ -40,7 +40,7 @@ class DatabaseHelper (context: Context) : SQLiteOpenHelper(context, DATABASE_NAM
         // array of columns to fetch
         val columns = arrayOf(COLUMN_USER_ID, COLUMN_USER_EMAIL, COLUMN_USER_FIRSTNAME,COLUMN_USER_LASTNAME, COLUMN_USER_PASSWORD)
         // sorting orders
-        val sortOrder = "$COLUMN_USER_FIRSTNAME ASC"+"$COLUMN_USER_LASTNAME ASC"
+        val sortOrder = "$COLUMN_USER_FIRSTNAME ASC"
         val userList = ArrayList<User>()
 
         val db = this.readableDatabase

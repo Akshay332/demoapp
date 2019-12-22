@@ -13,22 +13,23 @@ import com.example.demoapp.helper.InputValidation
 import com.example.demoapp.sql.DatabaseHelper
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputLayout
+import kotlinx.android.synthetic.main.activity_login_screen.*
 
 class LoginScreenActivity : AppCompatActivity(), View.OnClickListener {
 
     private val activity = this@LoginScreenActivity
 
-    private lateinit var ConstraintLayoutLogin: ConstraintLayout
+   // private lateinit var ConstraintLayoutLogin: ConstraintLayout
 
-    private lateinit var txtinputlayoutemail: TextInputLayout
-    private lateinit var edittxt_username: EditText
+   // private lateinit var txtinputlayoutemail: TextInputLayout
+   // private lateinit var edittxt_username: EditText
 
-    private lateinit var textinputlayoutpaswrd: TextInputLayout
-    private lateinit var edittext_pswd: EditText
+   // private lateinit var textinputlayoutpaswrd: TextInputLayout
+   // private lateinit var edittext_pswd: EditText
 
-    private lateinit var txtv_forgtpswd: TextView
+  //  private lateinit var txtv_forgtpswd: TextView
 
-    private lateinit var login_btn: Button
+   // private lateinit var login_btn: Button
 
     private lateinit var inputValidation: InputValidation
     private lateinit var databaseHelper: DatabaseHelper

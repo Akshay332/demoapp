@@ -25,6 +25,16 @@ class SignUpActivity : AppCompatActivity(), View.OnClickListener {
         iv_backbtn.setOnClickListener(this)
         signupBtn.setOnClickListener(this)
         txtv_alreadyaccount.setOnClickListener(this)
+        initObjects()
+    }
+    /**
+     * This method is to initialize objects to be used
+     */
+    private fun initObjects() {
+
+        databaseHelper = DatabaseHelper(activity)
+        inputValidation = InputValidation(activity)
+
     }
 
     override fun onClick(v: View?) {
